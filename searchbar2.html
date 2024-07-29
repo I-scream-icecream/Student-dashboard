@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>RAAR</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="./style2.css">
+
+  
+</head>
+
+<body>
+
+  <h1>SEARCH FOR STUDENT</h1>
+        <div class="searchBox">
+
+            <input class="searchInput"type="text" id="search" name="" placeholder="Search">
+            <button class="searchButton" onclick="search()" href="#">
+                <i class="material-icons">
+                    search
+                </i>
+            </button>
+        </div>
+
+        <script>
+          function search(){
+            var input = document.getElementById("search").value ;
+            if(input=="21BCS8637" || input=="Rudra Sharma"){
+                window.location.assign("index.html") ;
+                alert("Looks good") ;
+            }
+            else{
+                alert("INVALID INFORMATION!!") ;
+                return ;
+            }
+        }
+        </script>
+</body>
+
+</html>
